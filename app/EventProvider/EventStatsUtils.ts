@@ -18,7 +18,7 @@ export const calculateTimeGaps = (events: EventCardData[]): TimeGap[] => {
     // Calculate time difference in minutes
     const timeDiffMinutes = nextEvent.rawStartTime - currentEvent.rawEndTime;
     
-    // Only add gap if it's more than 2 hours (120 minutes)
+
     if (timeDiffMinutes > 120) {
       const hoursDiff = Math.floor(timeDiffMinutes / 60);
       const minutesDiff = timeDiffMinutes % 60;
@@ -53,7 +53,7 @@ export const filterTodayEvents = (events: Evento[]): Evento[] => {
     const todayDayOfWeek = diasSemana[today.getDay()];
     
     console.log(`Día de la semana actual: ${todayDayOfWeek}`);
-    console.log(`Total de eventos guardados: ${events.length}`);
+    console.log(`Total de eventos guardados: ${events.length}`)   ;
     
     // Filter events that match the current day of week
     const filteredEvents = events.filter(event => {
