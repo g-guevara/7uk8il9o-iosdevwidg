@@ -9,7 +9,7 @@ export const calculateTimeGaps = (events: EventCardData[]): TimeGap[] => {
     return [];
   }
   
-  const gaps: TimeGap[] = [];
+  const gaps: TimeGap[] = []; 
   
   for (let i = 0; i < events.length - 1; i++) {
     const currentEvent = events[i];
